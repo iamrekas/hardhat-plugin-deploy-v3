@@ -112,7 +112,11 @@ export class UniswapV3Deployer {
     return (await this.deployContract(
       artifacts.NonfungibleTokenPositionDescriptor.abi,
       linkedBytecode,
-      [weth9Address],
+      [
+        weth9Address,
+        // 'ETH' as a bytes32 string
+        "0x4554480000000000000000000000000000000000000000000000000000000000",
+      ],
       this.deployer
     )) as Contract;
   }
