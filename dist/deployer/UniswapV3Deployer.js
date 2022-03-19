@@ -59,7 +59,7 @@ class UniswapV3Deployer {
                     NFTDescriptor: [
                         {
                             length: 20,
-                            start: 1261,
+                            start: 1681
                         },
                     ],
                 },
